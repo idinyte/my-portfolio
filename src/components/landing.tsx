@@ -1,9 +1,5 @@
 import React, { useEffect } from "react";
 import '../styles/landing.css';
-import programming from '../resources/videos/programming.mp4';
-import exercising from '../resources/videos/exercising.mp4';
-import meditating from '../resources/videos/meditating.mp4';
-import reading from '../resources/videos/reading.mp4';
 
 export const Landing = () => {
   const initializeAnimation = () => {
@@ -32,8 +28,8 @@ export const Landing = () => {
     let x = Math.random() * boundaries.width;
     let y = Math.random() * boundaries.height;
 
-    let offsetX = Math.round(Math.random()) === 0 ? 30*Math.random() :-30*Math.random();
-    let offsetY = -40*Math.random() -40;
+    let offsetX = Math.round(Math.random()) === 0 ? 30 * Math.random() : -30 * Math.random();
+    let offsetY = -40 * Math.random() - 40;
 
     const animation_keyframes = [
       {
@@ -44,7 +40,7 @@ export const Landing = () => {
       },
       {
         // We define the final coordinates as the second keyframe
-        transform: `translate(${x + offsetX/2}px, ${y + offsetY/2}px) scale(1)`,
+        transform: `translate(${x + offsetX / 2}px, ${y + offsetY / 2}px) scale(1)`,
         opacity: 1
       },
       {
@@ -58,39 +54,15 @@ export const Landing = () => {
       duration: 4000 + Math.random() * 2500,
       easing: 'cubic-bezier(0.45, 0, 0.55, 1)',
       iterations: Infinity,
-      delay: 4000*Math.random()
+      delay: 4000 * Math.random()
     };
 
     particle.animate(animation_keyframes, animation_settings);
   }
 
-  const startVideoPlayer = () => {
-    const player = document.getElementById('video_player')! as HTMLVideoElement;
-    const playlist = [meditating, exercising, reading];
-    let count = 1;
-
-    const videoHandler = () => {
-      // every second video is programming
-      if (count % 2 === 0) {
-        player.src = programming;
-      }
-      else {
-        // the rest are from playlist array
-        player.src = playlist[Math.floor(count / 2) % 3];
-      }
-      player.load();
-      player.play();
-      count++;
-    }
-    player.addEventListener('ended', videoHandler);
-  }
-
-
 
   useEffect(() => {
     initializeAnimation();
-    //startVideoPlayer();
-    //<video id="video_player" src={programming} autoPlay muted></video>
   }, []);
 
   return (
@@ -100,7 +72,7 @@ export const Landing = () => {
         <h3>full stack developer</h3>
       </div>
       <div id="video_container">
-        
+
       </div>
     </div>
   );
