@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.e2053a6a.css",
+    "main.js": "/my-portfolio/static/js/main.7b4d2614.js",
+    "static/media/cv-maker.png": "/my-portfolio/static/media/cv-maker.0d35e2ea4f77dcd42fe9.png",
+    "static/media/dashboard.png": "/my-portfolio/static/media/dashboard.d4b74af0fb163a97fdd8.png",
+    "static/media/chess.png": "/my-portfolio/static/media/chess.e3a8b46debc67e78fb41.png",
+    "static/media/private-events.png": "/my-portfolio/static/media/private-events.b5448aba6ea1db3fcb7e.png",
+    "static/media/tic-tac-toe.png": "/my-portfolio/static/media/tic-tac-toe.d1d7cbea7c4ab8157883.png",
+    "static/media/pong-star.png": "/my-portfolio/static/media/pong-star.41c2aa6c0063d70b77ec.png",
+    "static/media/flight-booker.png": "/my-portfolio/static/media/flight-booker.b2f933e455b9febdbac6.png",
+    "static/media/sketch.png": "/my-portfolio/static/media/sketch.f1f0dd4c11a24fc0ed0f.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.e2053a6a.css.map": "/my-portfolio/static/css/main.e2053a6a.css.map",
+    "main.7b4d2614.js.map": "/my-portfolio/static/js/main.7b4d2614.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2053a6a.css",
+    "static/js/main.7b4d2614.js"
+  ]
+}
