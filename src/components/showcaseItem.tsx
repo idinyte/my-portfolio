@@ -20,10 +20,9 @@ export const ShowcaseItem = (props: showcaseItem) => {
       <div className="grid-item-body">
         <p>{props.description}</p>
         <div className="grid-buttons">
-          { props.view ? <a href={props.view} className="button" target="_blank" rel="noreferrer"><span className="material-symbols-outlined">
-            visibility</span>View</a>
+          { props.view ? <a href={props.view} className="button" target="_blank" rel="noreferrer">View</a>
             : null}
-          { props.code ? <a href={props.code} className="button" target="_blank" rel="noreferrer"><span className="fa fa-github"></span>Code</a> : null}
+          { props.code ? <a href={props.code} className="button" target="_blank" rel="noreferrer">Code</a> : null}
         </div>
       </div>
     </article>

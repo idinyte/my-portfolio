@@ -72,7 +72,10 @@ export const Landing = () => {
         <h3>full stack developer</h3>
       </div>
       <div id="video_container">
-
+      <video loop autoPlay={true} muted >
+          <source src={process.env.PUBLIC_URL + '/video/brain.mp4'} type="video/mp4" />
+          Sorry, your browser doesn't support videos.
+      </video>
       </div>
     </div>
   );
