@@ -1,4 +1,5 @@
 import React from "react";
+import CSS from '../styles/showcaseItem.module.css';
 
 interface showcaseItem{
   img: any,
@@ -10,16 +11,16 @@ interface showcaseItem{
 
 export const ShowcaseItem = (props: showcaseItem) => {
   return (
-    <article className="grid-item">
-      <div className="overlay-container">
-        <img src={props.img} alt="project screenshot" className='grid-img' />
-        <div className="overlay">
-          <p className="overlay-text">{props.title}</p>
+    <article className={CSS.gridItem}>
+      <div className={CSS.overlayContainer}>
+        <img src={props.img} alt="project screenshot" className={CSS.gridImg} />
+        <div className={CSS.overlay}>
+          <p className={CSS.overlayText}>{props.title}</p>
         </div>
       </div>
-      <div className="grid-item-body">
+      <div className={CSS.gridItemBody}>
         <p>{props.description}</p>
-        <div className="grid-buttons">
+        <div className={CSS.buttons}>
           { props.view ? <a href={props.view} className="button" target="_blank" rel="noreferrer">View</a>
             : null}
           { props.code ? <a href={props.code} className="button" target="_blank" rel="noreferrer">Code</a> : null}
