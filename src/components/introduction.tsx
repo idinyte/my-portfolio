@@ -12,7 +12,9 @@ export const Introduction = () => {
   return (
     <div className={CSS.container}>
       <h1>About me</h1>
-      <p>I am a full-stack developer who recently graduated from mechatronic studies in Lithuania. I have completed courses in artificial intelligence (Python) and embedded programming (C). In my spare time, I have developed a couple of Android games and apps. Additionally, I successfully finished a web development course at <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a>. In my spare time, I enjoy working out, meditating, expanding my knowledge in artificial intelligence, and working on new projects.
+      <p>
+      I am a recent graduate of Kaunas University of Technology, where I completed my Bachelor's degree in Mechatronics - a field focused on mechanical engineering, electronical engineering, and control systems. During my free time, I completed a comprehensive full-stack web development course at <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a>, which equipped me with the necessary skills to design and develop dynamic web applications. I have developed a handful of web applications (Ruby/Javascript/React/Node/RESTful API/SQLite), mobile applications (Android Studio Kotlin) and games (Unity C#).
+      In my free time I am reading, working out, teaching myself Danish and AI. 
       </p>
       <div className={CSS.downloadCV} onClick={openCV}><PDFIcon className={CSS.PDFIcon}/><span className="text"> Download CV</span></div>
     </div >
