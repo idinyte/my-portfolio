@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6140140b.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.5807d14a.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.5807d14a.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.e233c1ab.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.6700fef0.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.6700fef0.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.b4431c07.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.b4431c07.js.map",
     "static/js/2.6bb964bf.chunk.js": "/my-portfolio/static/js/2.6bb964bf.chunk.js",
     "static/js/2.6bb964bf.chunk.js.map": "/my-portfolio/static/js/2.6bb964bf.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.6140140b.chunk.css.map": "/my-portfolio/static/css/main.6140140b.chunk.css.map",
+    "static/css/main.e233c1ab.chunk.css.map": "/my-portfolio/static/css/main.e233c1ab.chunk.css.map",
     "static/js/2.6bb964bf.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.6bb964bf.chunk.js.LICENSE.txt",
     "static/media/tetris.module.css": "/my-portfolio/static/media/tetris.338f8de9.png",
     "static/media/athletesAfter2.0df5b581.png": "/my-portfolio/static/media/athletesAfter2.0df5b581.png",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4431c07.js",
     "static/js/2.6bb964bf.chunk.js",
-    "static/css/main.6140140b.chunk.css",
-    "static/js/main.5807d14a.chunk.js"
+    "static/css/main.e233c1ab.chunk.css",
+    "static/js/main.6700fef0.chunk.js"
   ]
 }
