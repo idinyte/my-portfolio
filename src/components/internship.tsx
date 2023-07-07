@@ -28,12 +28,16 @@ export const Internship = () => {
   }
 
   return (
-    <div className={CSS.container}>
+    <div className={CSS.container} id="work_examples">
       <h1>My work at internship</h1>
       <section className={CSS.slideshow}>
-        <button onClick={() => slideButtonClick(-1)} className={CSS.btn} style={{ transform: 'rotate(135deg)' }}></button>
+        <span onClick={() => slideButtonClick(-1)} className={`material-symbols-outlined ${CSS.btn}`}>
+        arrow_back
+        </span>
         {slides[currentSlide]}
-        <button onClick={() => slideButtonClick(1)} className={CSS.btn} style={{ transform: 'rotate(-45deg)' }}></button>
+      <span onClick={() => slideButtonClick(1)} className={`material-symbols-outlined ${CSS.btn}`}>
+        arrow_forward
+        </span>
       </section>
     </div >
   );

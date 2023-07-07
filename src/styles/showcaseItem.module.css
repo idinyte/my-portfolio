@@ -65,7 +65,8 @@
   color: inherit;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 0.75rem;
 }
 
 .buttons span {
@@ -74,5 +75,6 @@
 }
 
 .buttons a:hover {
-  border-bottom: 2px solid black;
+  cursor: pointer;
+  background: linear-gradient(320deg, rgba(224, 224, 224, 0.8), rgba(238, 238, 238, 0.2) 100%);
 }

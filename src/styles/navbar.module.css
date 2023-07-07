@@ -1,0 +1,42 @@
+.container{
+  position: sticky;
+  padding: 0.5rem 0 0.5rem 0;
+  top: 0;
+  z-index: 1000;
+  max-height: 59px;
+  background: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+li {
+  list-style: none;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  white-space: nowrap;
+}
+
+li:hover {
+  cursor: pointer;
+  background: linear-gradient(320deg, rgba(224, 224, 224, 0.8), rgba(238, 238, 238, 0.2) 100%);
+              
+}
+
+@media (max-width: 768px) {
+  ul{
+    gap: 1.75rem;
+  }
+
+  .large
+  {
+    display: none;
+    width: 0;
+  }
+
+}

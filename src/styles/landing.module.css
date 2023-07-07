@@ -17,12 +17,12 @@
   align-items: center;
 }
 
-.container > :first-child > h1{
-  font-size: 4rem;
+.container > div > h1{
+  font-size: min(5vw, 72px);
 }
 
-.container > :first-child > h3 {
-  font-size: 2rem;
+.container > div > h3 {
+  font-size: min(3vw, 42px);
   color: #F5F5F5;
 }
 
@@ -45,8 +45,26 @@ particle {
 }
 
 .videoContainer > video{
-  height: 60%;
-  max-height: 600px;
-  
+  height: auto;
+  width: 40vw;
+  max-width: 900px;
 }
 
+@media (max-width: 768px) {
+  .container > div > h1 {
+    font-size: 48px;
+  }
+  .container > div > h3  {
+    font-size: 26px;
+  }
+
+  .videoContainer > video{
+    height: auto;
+    width: 80%;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+  }
+
+}

@@ -10,7 +10,7 @@ import calculator from '../resources/images/calculator.png';
 
 export const Showcase = () => {
   return (
-    <div className={CSS.container}>
+    <div className={CSS.container} id="projects">
       <h1>Some of the things I made</h1>
       <section className={CSS.grid}>
         <ShowcaseItem img={pongStar} title="Pong star" description="Android puzzle game made using Unity3D and C#."

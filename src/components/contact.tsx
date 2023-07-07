@@ -1,10 +1,9 @@
-import React from "react";
 import CSS from '../styles/contact.module.css';
 import { SocialIcon } from 'react-social-icons';
 
 export const Contact = () => {
   return (
-    <div className={CSS.container}>
+    <div className={CSS.container} id="contact">
       <h1>Contact me</h1>
       <div className={CSS.flexHorizontal}>
         <SocialIcon className={CSS.hoverAnim} target="_blank" url="https://github.com/idinyte" />

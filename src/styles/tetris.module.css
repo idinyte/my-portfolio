@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "pixeled";
+  src: url("../resources/font/pixeled/Pixeled.ttf");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: top;
+  --screen-height: calc((100vh - 59px));
+  --screen-width: calc((var(--screen-height) - 80px) * 10 / 16);
+  height: var(--screen-height);
+  margin-top: 2rem;
+}
+
+.screenThree {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  background-image: url('../resources/images/tetris.png');
+  object-fit: none;
+  background-size: cover;
+}
+
+.screenTwo {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.screenOne {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  background-image: url('../resources/images/tetris.png');
+  object-fit: none;
+  background-size: cover;
+}
+
+.buttonsBefore {
+  min-height: 80px;
+  max-height: 80px;
+  width: 100%;
+  background-image: linear-gradient(135deg, rgb(250, 102, 102), rgb(158, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.buttons {
+  display: flex;
+  box-sizing: border-box;
+  height: calc(100% - 5px);
+  width: calc(100% - 10px);
+  background-image: linear-gradient(135deg, rgb(240, 64, 64), rgb(228, 9, 9));
+  border-radius: 0 0 0.75rem 0.75rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.newGameScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.newGame {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spaceAround {
+  width: 100%;
+  height: 100%;
+  justify-content: space-around !important;
+}
+
+
+
+.inGame {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+.square {
+  box-sizing: border-box;
+  background-color: black;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.horizontalContainer {
+  display: flex;
+  height: 100%;
+  gap: 5rem;
+  flex-direction: row;
+  align-content: top;
+  justify-content: center;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(159, 0, 240);
+
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.right {
+  width: 33%;
+  transform: rotateY(-270deg) translateZ(250px);
+
+}
+
+.left {
+  width: 33%;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.front {
+  transform: rotateX(0deg) translateZ(50px);
+}
+
+.back {
+  transform: rotateX(-180deg) translateZ(50px);
+}
+
+.plane {}
+
+
+.playButton {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  height: 15vh;
+  width: 100%;
+  fill: rgb(255, 255, 255)
+}
+
+.playButton:hover, .controlButton:hover {
+  cursor: pointer;
+}
+
+.playButton:active, .controlButton:active {
+  background: linear-gradient(140deg, rgb(19, 19, 19), rgba(0, 0, 0, 0.8)100%);
+}
+
+.rePlayButton {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  font-size: 15cqh;
+  color: white;
+  transition: transform 0.25s ease-in;
+}
+
+.rePlayButton:hover {
+  cursor: pointer;
+  transform: rotateZ(-0.08turn);
+}
+
+.controlButton {
+  border-radius: 0.5rem;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  text-align: center;
+  vertical-align: center;
+  font-size: 3.5vh;
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(226, 226, 226);
+  background: linear-gradient(140deg, rgb(43, 43, 43), rgba(20, 20, 20, 0.8));
+  flex-grow: 1;
+  box-shadow: 2px 2px 2px 2px rgb(36, 36, 36);
+}
+
+.pixeled {
+  font-family: 'pixeled';
+  width: 200px;
+}
+
+.yellow {
+  color: rgb(255, 196, 0);
+}
+
+.gameOver {
+  font-family: 'pixeled';
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: red;
+  font-size: 4vh;
+}
+
+.newHighScore {
+  font-family: 'pixeled';
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: rgb(255, 196, 0);
+  font-size: 3.5vh;
+  text-align: center;
+}
+
+.instructions {
+  position: absolute;
+  right: -20vw;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  scale: 0.75;
+}
+
+
+.instructions div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.instructions p {
+  margin-left: 1rem;
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .instructions {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .instructions {
+    scale: 0.5;
+  }
+}
+
+.A {
+  content: url("../resources/images/controls/A.png");
+}
+
+.S {
+  content: url("../resources/images/controls/S.png");
+}
+
+.D {
+  content: url("../resources/images/controls/D.png");
+}
+
+.R {
+  content: url("../resources/images/controls/R.png");
+}
+
+.T {
+  content: url("../resources/images/controls/T.png");
+}
+
+.shift {
+  content: url("../resources/images/controls/Shift.png");
+}
+
+.leftControl {
+  content: url("../resources/images/controls/Left.png");
+}
+
+.rightControl {
+  content: url("../resources/images/controls/Right.png");
+}
