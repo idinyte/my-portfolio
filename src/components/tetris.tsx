@@ -513,7 +513,7 @@ export const Tetris = () => {
         <audio autoPlay loop id="theme-song">
           <source src={soundtrack} type="audio/mp3"></source>
         </audio>
-        <p className={CSS.pixeled}>
+        <p className={`${CSS.pixeled} ${CSS.largeOnly}`}>
           {" "}
           Score:
           <br /> {currentScore.current}
@@ -549,7 +549,7 @@ export const Tetris = () => {
             </div>
           </div>
         </div>
-        <p className={`${CSS.pixeled} ${CSS.yellow}`}>
+        <p className={`${CSS.pixeled} ${CSS.yellow} ${CSS.largeOnly}`}>
           {" "}
           High score:
           <br /> {HighScore.current}
